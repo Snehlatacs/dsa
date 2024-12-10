@@ -18,6 +18,7 @@ public class calSize {
     public void addFirst(int data)
     {
         Node newNode = new Node(data);
+        size++;
         if(head==null)
         {
             head=tail=newNode;
@@ -32,6 +33,7 @@ public class calSize {
     public void addLast(int data)
     {
         Node newNode = new Node(data);
+        size++;
         if(head==null)
         {
             head=tail=newNode;
@@ -51,6 +53,7 @@ public class calSize {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         while(i<idx-1)
@@ -79,9 +82,10 @@ public class calSize {
         calSize ll = new calSize();
         ll.addFirst(1);
         ll.addFirst(6);
-        ll.addFirst(0);
-        ll.addFirst(3);
+        ll.addLast(10);
+        ll.addLast(3);
         ll.addMid(2,13);
         ll.print();
+        System.out.println(ll.size);
     }
 }
