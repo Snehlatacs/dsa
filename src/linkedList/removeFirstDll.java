@@ -1,6 +1,6 @@
 package linkedList;
 
-public class addFirstDoublyll {
+public class removeFirstDll {
     public class Node
     {
         int data;
@@ -34,6 +34,28 @@ public class addFirstDoublyll {
         head = newNode;
     }
 
+    public int remvFirst()
+    {
+        if(head==null)
+        {
+            System.out.println("dll is empty");
+            return Integer.MIN_VALUE;
+        }
+        if(size==1)
+        {
+            int val = head.data;
+            head = tail=null;
+            size--;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
+
+
     public void print()
     {
         Node temp = head;
@@ -46,11 +68,13 @@ public class addFirstDoublyll {
     }
 
     public static void main(String[] args) {
-        addFirstDoublyll dll = new addFirstDoublyll();
+        removeFirstDll dll = new removeFirstDll();
         dll.adFirst(3);
         dll.adFirst(4);
         dll.adFirst(5);
         dll.print();
         System.out.println(dll.size);
+        dll.remvFirst();
+        dll.print();
     }
 }

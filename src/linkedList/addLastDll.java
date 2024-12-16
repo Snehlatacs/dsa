@@ -1,37 +1,40 @@
 package linkedList;
 
-public class addFirstDoublyll {
-    public class Node
+public class addLastDll {
+    public static class Node
     {
         int data;
-        Node next;
         Node prev;
+        Node next;
+
         public Node(int data)
         {
             this.data = data;
             this.prev = null;
             this.next = null;
         }
-
     }
     public static Node head;
     public static Node tail;
     public static int size;
 
-    public void adFirst(int data)
+    public void adLast(int data)
     {
         Node newNode = new Node(data);
         size++;
-
         if(head==null)
         {
             head=tail=newNode;
             return;
         }
+        Node temp = head;
+        while(temp.next!=null)
+        {
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        newNode.prev = temp;
 
-        newNode.next = head;
-        head.prev = newNode;
-        head = newNode;
     }
 
     public void print()
@@ -39,18 +42,22 @@ public class addFirstDoublyll {
         Node temp = head;
         while(temp!=null)
         {
-            System.out.print(temp.data+"<->");
+            System.out.print(temp.data+" ");
             temp = temp.next;
         }
-        System.out.println("null");
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        addFirstDoublyll dll = new addFirstDoublyll();
-        dll.adFirst(3);
-        dll.adFirst(4);
-        dll.adFirst(5);
-        dll.print();
-        System.out.println(dll.size);
+        addLastDll list = new addLastDll();
+
+        // Adding nodes to the doubly linked list
+        list.adLast(10);
+        list.adLast(20);
+        list.adLast(30);
+
+        // Print the list
+        System.out.println("Doubly Linked List:");
+        list.print();
     }
 }
