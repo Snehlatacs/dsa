@@ -1,4 +1,4 @@
-package LInkedLIistProblem;
+package linkedList;
 
 class Node {
     int data;
