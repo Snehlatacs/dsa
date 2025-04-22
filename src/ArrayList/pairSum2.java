@@ -20,16 +20,14 @@ public class pairSum2 {
 
         while(leftPointer!=rightPointer)
         {
-            if (target == (list.get(leftPointer) )+ (list.get(rightPointer))) {
-                return true;
-            }
+            if (target == (list.get(leftPointer) ) + (list.get(rightPointer)))  return true;
 
             if(target > list.get(leftPointer) + list.get(rightPointer))
             {
                 leftPointer = (leftPointer + 1) % n;
             }
             else{
-                rightPointer  = (n + rightPointer -1 ) % n;
+                rightPointer  = (n + rightPointer - 1) % n;
             }
         }
 

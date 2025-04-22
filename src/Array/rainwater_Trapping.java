@@ -10,6 +10,7 @@ public class rainwater_Trapping {
         int sum = 0;
         int n = h.length;
 
+        //left Max boundry
         int[] arr1 = new int[n];
         arr1[0] = h[0];
         for(int i  = 1 ; i<n; i++)
@@ -20,6 +21,7 @@ public class rainwater_Trapping {
 
         //System.out.println();
 
+        //right Max boundry
         int[] arr2 = new int[n];
         arr2[n-1] = h[n-1];
         for(int i  = n-2 ; i>=0; i--)
