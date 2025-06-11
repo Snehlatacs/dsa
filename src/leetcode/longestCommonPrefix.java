@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class longestCommonPrifix {
+public class longestCommonPrefix {
     public static String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
 
@@ -23,9 +23,11 @@ public class longestCommonPrifix {
         String[] words1 = {"flower", "flow", "flight"};
         String[] words2 = {"dog", "racecar", "car"};
         String[] words3 = {"apple", "ape", "april"};
+        String[] words4 = {};
 
         System.out.println("Longest Common Prefix: " + longestCommonPrefix(words1)); // Output: "fl"
         System.out.println("Longest Common Prefix: " + longestCommonPrefix(words2)); // Output: ""
         System.out.println("Longest Common Prefix: " + longestCommonPrefix(words3)); // Output: "ap"
+        System.out.println("Longest Common Prefix: " + longestCommonPrefix(words4)); // Output: ""
     }
 }
