@@ -89,7 +89,7 @@ public class palindrom {
     public static void main(String[] args) {
         palindrom ll = new palindrom();
         ll.addFirst(1);
-        ll.addFirst(2);
+        ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(1);
         ll.print();
