@@ -1,3 +1,16 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# IDE-specific
+/tasks.xml
+/usage.statistics.xml
+/dataSources/
+/dataSources.local.xml
+/gradle.xml
+/.idea_modules/
+/libraries/
+
+# ...existing code...
+/out/
+# ...existing code...

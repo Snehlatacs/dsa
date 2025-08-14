@@ -1,0 +1,28 @@
+#html, body {
+    background-color: #030303;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffa116;
+    padding: 0;
+    margin: 18px;
+    box-sizing: border-box;
+}
+
+a:link{
+    color: #ffa116;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5ca86f;
+    text-decoration: none;
+}
+
+a:active {
+    color: #eeea1b;
+    text-decoration: none;
+}
